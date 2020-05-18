@@ -1,0 +1,505 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+
+h1{
+  font-weight: bold;
+  text-shadow: black 1px 1px;
+  color: black;
+    font-size: 3em; 
+}
+
+h3{
+  color: black;
+}
+
+.title p{
+  padding: 10px 20px 10px 20px;
+backdrop-filter: blur(10px);
+  border-radius: 20px;
+  text-align: justify;
+  text-shadow: rgb(49, 49, 49) 1px 1px;
+  color: black;
+}
+
+
+.container { 
+  box-sizing: border-box;
+  height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    align-items: center;
+    width: 100%;
+  }
+
+  .browse{
+    width: 100%;
+    margin-bottom: 5em; 
+    }
+
+  .sidenav{
+      height:100%;
+      width: 0;
+      position: fixed;
+      z-index: 2;
+      top:0;
+      left:0;
+      background-color: #343a40;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+  }
+
+  .sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover{
+      color: #f1f1f1;
+  }
+  .sidenav .closebtn{
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left:50px;
+      color: whitesmoke;
+      cursor:pointer;
+  }
+ 
+  .icon{
+    left: 5px;
+      position: fixed;
+      font-size: 30px;
+      cursor:pointer;
+      z-index: 1; 
+      box-shadow: 5px 2px 2px black;
+      background-color: #343a40;
+      color: #818181;
+    border-radius: 50%;
+    width: auto;  
+    padding-right: 10px;
+    padding-left: 10px; 
+    margin-top: 20px;
+  }
+
+  
+
+
+  .slideshow{
+    display: none;
+  }
+
+  .container1{
+    
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    
+  }
+
+  #welcome_page{
+    background-position: center;
+    background-image: url('joshua-eckstein-VAJEea9u6k8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+
+  .front-text{
+    text-align: center;
+  }
+
+.container2{
+  padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+  #my_art{
+    overflow-x: hidden;
+    background-position: right;
+    background-image: url('kelli-tungay-2LJ4rqK2qfU-unsplash2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .collapsible {
+    margin-left: 33.3vw;
+    color: white;
+    cursor: pointer;
+    width: auto;
+    border: none;
+    outline: none;
+    font-size: 15px;
+  }
+  
+    #myBtnContainer{
+    margin-top: 10px;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-left: 10vw;
+  }
+
+  .scroll{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    background-color: none;
+    height: 60vh;
+    overflow-y: auto;
+  }
+
+  .row {
+    margin: 2px -2px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+  
+  .column{
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px;
+    display: none;
+  }
+  
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    text-align: center;
+    background-color: white;
+  }
+
+  
+
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .zoomD {
+    height:250px;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+  }
+  .zoomD:hover {
+    transform: scale(1.1,1.5) translate(0,10%);
+  }
+ 
+  .container3{
+    display: block;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+  }
+
+  #other_artists{
+    
+    background-image: url('kelli-tungay-2LJ4rqK2qfU-unsplash.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    
+  }
+
+  #other_artists > h1 p{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .card{
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition-duration: 0.5s;
+  }
+  .card:hover{
+    transform: translateY(5px);
+  }
+
+  .content > .btn{
+    height: auto;
+    width: 50%;
+  }
+
+  .container4{  
+    padding-top: 20px;
+    padding-bottom: 20px;
+   height: auto;
+   
+  }
+
+  
+
+  #useful{
+    background-color: #343a40;
+  }
+
+  .quote{
+    height: 40%;
+  }
+
+    footer{
+      margin-left: auto;
+    margin-right: auto;
+      margin-left: auto;
+    }
+
+    hr{   
+      background-color: #d3cfcf;
+      }
+
+    .icons{
+    padding-top: 30px;
+     word-spacing: 10px;  
+    }
+
+
+    .facebook, .twitter, .insta, .github, .linkedin{
+      transition-duration: 0.5s;
+    }
+
+    .icons :hover{
+      transform: translateY(5px);
+    }
+
+   
+  
+
+  @media only screen and (min-width:576px){
+   .paragraph{
+    display: none;
+    }
+
+   .slideshow{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }
+
+    .browse{
+      margin-top: 20px;
+    }
+
+    [data-aos="rotate-c"] {
+    transform: rotate(-180deg);
+    transition-property: transform;}
+    
+    [data-aos="rotate-c"].aos-animate {
+      transform: rotate(0deg);}
+
+   .myimg{
+    height:250px;
+    width: 250px;
+    border-radius: 50%;
+    }
+
+    #myBtnContainer{
+      margin-left: 15vw;
+    }
+
+    .content{
+      width: 200px;
+    }
+
+    .scroll{
+      width: auto;
+    }
+
+    .zoomD{
+      height: 250px;
+    }
+
+    .zoomD:hover {
+      transform: scale(2.0) translate(33.3%,33.3%);
+    }
+
+
+    .card{
+      width: 210px;
+    }
+
+    .artists_pic{
+      width: 210px !important;
+    }
+  
+  }
+
+  @media only screen and (min-width:768px){
+
+
+
+    .slideshow{
+      overflow-x: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      }
+
+    .myimg{
+      height:250px;
+      width: 250px;
+      border-radius: 50%;
+      }
+
+    .browse{
+      width: auto;
+      margin-top: 0;
+      margin-left: 50px;
+    }
+
+
+
+    .paragraph{
+      display: grid;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto 40% auto ;  
+      
+      grid-gap: 50px;
+    }
+
+    .grid-container > div {
+      
+      text-align: center;
+      
+    }
+    
+    
+   
+    
+    .item1 {
+      grid-area: 2/1/4/3;
+    }
+    
+    .item2 {
+     
+      grid-area: 1/1/2/5;
+    }
+    .item3 {
+      margin-left: 60px;
+      grid-area: 2/3/3/5;
+    }
+    .item4 {
+      grid-area: 3/3/3/5;
+    }
+
+    #myBtnContainer{
+      margin-left: 25vw;
+    }
+  }
+
+
+
+ 
+  @media only screen and (min-width:992px){
+
+body{
+  font-size: 120%;
+}
+
+#welcome_page{
+  padding-top: 40px;
+}
+
+.icon{ box-shadow: 5px 2px 2px black;
+
+  border-radius: 50%;
+  width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 65px;
+  margin-left: 80px;
+  font-size: 40px;
+ transition: 0.7s !important;
+ background-color: #343a40;
+    color: #818181;
+ 
+}
+
+.icon:hover{
+ 
+  color: #d3cfcf;
+}
+
+.browse{
+  font-size: 20px;
+  margin: auto;
+}
+
+.slideshow{
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  }
+
+.myimg{
+    height:300px;
+    width: 300px;
+    border-radius: 50%;
+    }
+
+.paragraph{
+  width: 70%;
+}
+
+.card{
+  margin-top: 70px;
+}
+
+.collapsible{
+  font-size: 18px;
+}
+
+
+
+
+
+}
+
+
+  
+  
+  
+    
+  
+
+  
